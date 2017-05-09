@@ -1,0 +1,176 @@
+html, body {
+    background-color: #525c77!important;
+    color: #636b6f;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold; /*100*/
+    min-height: 100vh;
+    height: auto;
+    margin: 0;
+    text-decoration: none!important;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 84px;
+}
+
+.links > a {
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+nav ul a{
+  font-size: 1.2rem!important;
+}
+
+nav .nav-wrapper {
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+nav{
+  background-color: #5061a4!important;
+}
+
+.welkom {
+  border: 2px solid #569eff;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  box-shadow: azure;
+  border-radius: 100px;
+  background-color: #3e3e40;
+  color: aqua;
+  box-shadow: 1px 0px 10px #000000;
+}
+ .welkom .row h2{
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ a, a:hover{
+  text-decoration: none!important;
+}
+
+
+
+
+
+#login-register-edit {
+  margin-top: 15vh;
+}
+
+a {
+  color: white!important;
+}
+
+
+
+
+
+
+/*INFO HIER BEGINT DE STYLE VAN DE BLOG-HOMEPAGE INFO*/
+.top-tron {
+  background-color: #3e3e40;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  height: 20vh;
+  border: 2px solid aqua;
+  border-radius: 20px;
+  color: aqua;
+}
+
+.top-tron h1 {
+  vertical-align: middle;
+}
+
+/*INFO LAATSTE POST & POPULAIRSTE POST? INFO*/
+.container .row {
+  margin-top: 3vh;
+}
+
+#wrapje{
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+}
+
+#col-links{
+  border: 2px solid #5061A4;
+  float: left;
+  border-radius: 20px;
+  width: 45%;
+  background-color: #3e3e40;
+  height: 35vh;
+  color: white;
+  margin-left: 1%;
+}
+
+#col-rechts{
+  border: 2px solid #5061A4;
+  float: right;
+  border-radius: 20px;
+  width: 45%;
+  background-color: #3e3e40;
+  height: 35vh;
+  color: white;
+  margin-right: 1%;
+}
+
+#profile-page{
+  color: white!important;
+}
+
+#profile-image{
+  width: 180px;
+  height: 180px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+
+.navbar-brand{
+  line-height: 5vh!important;
+  height: 64px!important;
+}
+
+/*#navbar-right_adjustments{
+  margin-top: -10vh;
+}*/
+
+#create-page{
+  color: white!important;
+}
