@@ -12,6 +12,7 @@
 
 <div class="row">
      <form method="POST" action="/posts" class="col s12">
+       {{ csrf_field()}}
        <div class="row">
          <div class="input-field col s6">
            <input id="title" type="text" data-length="10" name="title">
@@ -31,7 +32,15 @@
               <i class="material-icons right">cloud</i>
           </button>
       </div>
+
+  @include ('layouts.errors')
+
      </form>
+
+
+
+
+
    </div>
  </div>
 

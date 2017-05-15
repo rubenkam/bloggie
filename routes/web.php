@@ -21,18 +21,21 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 
-Route::get('/posts', function () {
-  return view('posts');
+Route::group(['middleware' => 'auth'], function () {
+  Route::get('/posts', 'PostController@index');
+
+  Route::get('posts/create', 'PostController@create');
+
+  Route::post('/posts', 'PostController@store');
+
+  Route::get('/posts/{post}', 'Postcontroller@show');
+
+  Route::post('/posts/{post}/comments', 'CommentsController@store' );
+
+
+  // Route::get('/create', 'PostsController@create');
+
+
+  Route::get('profile', 'UserController@profile'); //routes voor profile.blade.php
+  Route::post('profile', 'UserController@update_avatar');
 });
-
-Route::get('posts/create', 'PostController@create');
-
-Route::post('/posts', 'PostsController@store')
-
-
-// Route::get('/create', 'PostsController@create');
-
-
-Route::get('profile', 'UserController@profile'); //routes voor profile.blade.php
-Route::post('profile', 'UserController@update_avatar');
-Route::auth();

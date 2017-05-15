@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Post;
+use App\Comment;
+use Auth;
+
+class CommentsController extends Controller
+{
+   public function store(Post $post)
+   {
+
+     $this->validate(request(), ['body' => 'required|min:2']);
+
+     $post->addComment(request('body'), Auth::id());
+
+    //  Comment::create([
+     //
+    //    'body' => request('body'),
+     //
+    //    'post_id' => $post->id
+     //
+    //  ]);
+
+
+
+     return back();
+
+   }
+
+}

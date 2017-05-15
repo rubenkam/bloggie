@@ -10,7 +10,24 @@
       <h2>{{ $user->name }}'s Profile</h2>
       <form enctype="multipart/form-data" action="/profile" method="POST">
         <label>Update je profile picture</label>
-        <input type="file" name="avatar">
+        <!-- <input type="file" name="avatar"> -->
+
+
+
+
+  <div class="file-field input-field">
+    <div class="btn">
+      <span>File</span>
+      <input type="file" name="avatar">
+    </div>
+    <div class="file-path-wrapper">
+      <input class="file-path validate" type="text" name="avatar">
+    </div>
+  </div>
+
+
+
+
         <input type="hidden" name="_token" value="{{csrf_token() }}">
         <input type="submit" class="pull-right waves-effect waves-light btn">
     </div>
